@@ -12,30 +12,35 @@
 
     <header>
 
-        <div class="topnav">
-            <h1>Edouard Adèle</h1>
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-            </a>
-        </div>
+        <section class="topnav">
+            <section class="title">
+                <h1>Edouard Adèle</h1>
+            </section>
+            <section class="menu">
+                <a href="#home" class="active">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </section>
+        </section>
+
+        <!-- Image de profil -->
         <figure>
             <a target="_blank" href="pfp.png"><img src="pfp.png" alt="PFP" class="pfp"></a> 
-
         </figure>
 
     </header>
 
+    <!-- Section des diapositives -->
     <article>
+        <!-- Conteneur du diaporama -->
         <div class="slideshow-container">
 
+            <!-- Diapositives -->
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
                 <img src="pic1.jpg" style="width:100%">
-                <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere rerum, sequi ipsa quibusdam obcaecati iste, fugit voluptatem velit delectus iure accusamus minima! Itaque numquam vitae earum laboriosam. Nam, beatae quis.</div>
+                <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit...</div>
             </div>
 
             <div class="mySlides fade">
@@ -50,18 +55,21 @@
                 <div class="text">Caption Three</div>
             </div>
 
+            <!-- Boutons de navigation du diaporama -->
             <a class="prev" onclick="plusSlides(-1)">❮</a>
             <a class="next" onclick="plusSlides(1)">❯</a>
 
         </div>
         <br>
 
+        <!-- Indicateurs de position du diaporama -->
         <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
+        <!-- Script pour le diaporama -->
         <script>
             let slideIndex = 1;
             showSlides(slideIndex);
@@ -92,39 +100,41 @@
         </script>
     </article>
 
+    <!-- Section principale avec des articles -->
     <main>
-        <section>
-            <h2>Projet 1</h2>
+        <!-- Articles répétés pour illustration -->
+        <article>
+            <h2>Projet 6</h2>
             <p>efLorem10</p>
+        </article>
 
-        </section>
-
-        <section>
-            <h2>Projet 2</h2>
+        <article>
+            <h2>Projet 6</h2>
             <p>efLorem10</p>
-        </section>
+        </article>
 
-        <section>
-            <h2>Projet 3</h2>
+        <article>
+            <h2>Projet 6</h2>
             <p>efLorem10</p>
-        </section>
+        </article>
     </main>
 
     <main>
-        <section>
-            <h2>Projet 4</h2>
-            <p>efLorem10</p>
-        </section>
-
-        <section>
-            <h2>Projet 5</h2>
-            <p>efLorem10</p>
-        </section>
-
-        <section>
+        <!-- Articles répétés pour illustration -->
+        <article>
             <h2>Projet 6</h2>
             <p>efLorem10</p>
-        </section>
+        </article>
+
+        <article>
+            <h2>Projet 6</h2>
+            <p>efLorem10</p>
+        </article>
+
+        <article>
+            <h2>Projet 6</h2>
+            <p>efLorem10</p>
+        </article>
     </main>
 
     <footer>
@@ -218,6 +228,6 @@
                 stroke-dasharray="100" />
         </svg>
     </footer>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
