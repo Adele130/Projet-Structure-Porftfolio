@@ -73,6 +73,7 @@ section {
     text-align: center;
 }
 
+/*Le Caroussel*/
 .CarouselEntier {
     width: 100%;
     height: 300px;
@@ -87,15 +88,13 @@ section {
 .carousel-item img {
     width: 100%;
     height: 100%;
-    /*Adapte la taille de l'image au conteneur*/
-    object-fit: cover;
+    object-fit: cover;/*Adapte la taille de l'image au conteneur*/
 }
 
 .nextBtn,
 .prevBtn {
     position: absolute;
     top: 50%;
-    font-size: 20px;
     cursor: pointer;
 }
 
