@@ -82,7 +82,18 @@ section{
 }
 
 /*Formulaire*/
+input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
 
+button {
+    padding: 10px;
+    background-color: #704caf;
+    color: white;
+    border-radius: 3px;
+}
 
 /*Footer*/
 footer {
