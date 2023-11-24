@@ -43,11 +43,10 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
         display: none;
     }
 
-    .icon{
-        display:block;
-        width:35px;
-        position:absolute;
-        
+    .icon {
+        margin-left: auto;
+        display: block;
+        width: 44px;
     }
 }
 
