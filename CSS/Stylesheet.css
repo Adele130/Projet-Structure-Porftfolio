@@ -33,6 +33,12 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
     color: black;
 }
 
+@media (max-width: 767px) {
+    .Navigation a{
+        display:none;
+    }
+}
+
 /*Image*/
 .pfp {
     width: 15%;
