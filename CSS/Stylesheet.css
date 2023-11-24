@@ -4,24 +4,25 @@
     margin: 0;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;}
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 /*Barre de Navigation, tout le groupe en premier
 puis EDOUARD Adèle, puis les liens, et un hover*/
 .menu {
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     overflow: hidden;
-    display:flex;
+    display: flex;
 }
 
-.h2{
-    font-size:16px;
+.h2 {
+    font-size: 16px;
     color: white;
 }
 
 .Navigation a {
-    float:right;
+    float: right;
     padding: 10px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -33,9 +34,19 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
     color: black;
 }
 
+.icon{
+    display:none;
+}
+
 @media (max-width: 767px) {
-    .Navigation a{
-        display:none;
+    .Navigation a {
+        display: none;
+    }
+
+    .icon{
+        display:block;
+        width:35px;
+        position:absolute;
     }
 }
 
@@ -44,7 +55,8 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
     width: 15%;
     border-radius: 50%;
     display: block;
-    margin: auto;/* Centrer l'image horizontalement */
+    margin: auto;
+    /* Centrer l'image horizontalement */
     margin-top: 15px;
 }
 
@@ -55,9 +67,9 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
 }
 
 /*Edito*/
-section{
+section {
     background-color: #E0C3FC;
-    text-align:center;
+    text-align: center;
 }
 
 /*Box Projet*/
@@ -96,7 +108,7 @@ input {
 
 button {
     padding: 10px;
-    background-color: #704caf;
+    background-color: #d1b1fe;
     color: white;
     border-radius: 3px;
 }
