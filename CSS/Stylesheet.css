@@ -12,8 +12,8 @@ body {
 puis EDOUARD Adèle, puis les liens, et un hover*/
 .menu {
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-    overflow: hidden;
     display: flex;
+    justify-content: space-between; /* Ajout de cette ligne pour séparer les éléments à gauche et à droite */
 }
 
 .h2 {
@@ -22,7 +22,7 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
 }
 
 .Navigation a {
-    float: right;
+    float: left;
     padding: 10px 16px;
     text-decoration: none;
     font-size: 17px;
