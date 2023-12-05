@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">s
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +9,25 @@
 </head>
 
 <body>
-<header>
-    <section class="menu">
-        <h2>EDOUARD Adèle</h2>
-        <div class="Navigation">
-            <a href="#home">Accueil</a>
-            <a href="#edito">News</a>
-            <a href="#projet">Contact</a>
-            <a href="#contact">About</a>
-        </div>
-        <img class="icon" src="../Images/menubars.png" alt="MenuBars">
-    </section>
+    <header>
+        <section class="menu" id="MENU">
+            <h2>EDOUARD Adèle</h2>
+            <div class="Navigation">
+                <a href="#home">Accueil</a>
+                <a href="#edito">News</a>
+                <a href="#projet">Contact</a>
+                <a href="#contact">About</a>
+            </div>
+            <a href="javascript:void(0);" onclick="myFunction()">
+                <img class="icon" src="../Images/menubars.png" alt="MenuBars">
+            </a>
+            <!--<img class="icon" src="../Images/menubars.png" alt="MenuBars" onclick="toggleMenu()">-->
+        </section>
 
-    <figure>
-        <a target="_blank" href="../Images/pfp.png"><img src="../Images/pfp.png" alt="PFP" class="pfp"></a> 
-    </figure>
-</header>
+        <figure>
+            <a target="_blank" href="../Images/pfp.png"><img src="../Images/pfp.png" alt="PFP" class="pfp"></a> 
+        </figure>
+    </header>
 
     <div class="CarouselEntier">
         <div class="carousel-item">
@@ -41,26 +45,47 @@
     </div>
 
     <section class="edito">
-        <p>Caroussel ou Edito</p>
+        <p>Mes Projets en Image</p>
         <br>
     </section>
 
     <br>
 
     <div class="Boites">
-        <div class="box">Projet 1</div>
-        <div class="box">Projet 2</div>
-        <div class="box">Projet 3</div>
+        <div class="box">
+            <h2>Projet 1</h2>
+            <p>Mise en place d'un réseau de voyages dans le temps à des fins touristiques</p>
+        </div>
+        <div class="box">
+            <h2>Projet 2</h2>
+            <p>Développement d'un dispositif de traduction universelle qui traduit les pensées et émotions</p>
+        </div>
+        <div class="box">
+            <h2>Projet 3</h2>
+            <p>Création d'un service de réservation interstellaire</p>
+        </div>
     </div>
 
     <div class="Boites">
-        <div class="box">Projet 4</div>
-        <div class="box">Projet 5</div>
-        <div class="box">Projet 6</div>
+        <div class="box">
+            <h2>Projet 4</h2>
+            <p>Réduction de l'Everest à la taille d'une petite colline pour un accès facile</p>
+        </div>
+        <div class="box">
+            <h2>Projet 5</h2>
+            <p>Créer un univers virtuel personnalisé pour chaque individu basé sur leurs rêves/désirs</p>       
+        </div>
+        <div class="box">
+            <h2>Projet 6</h2>
+            <p>Connecter tous les animaux du monde à Internet pour faciliter la communication interespèces</p>
+        </div>
     </div>
+
+    <br><br>
 
     <article class="Formulaire">
         <form>
+            <br>
             <label>Nom :</label>
             <input type="text" class="nom" required><br><br>
 
@@ -72,25 +97,25 @@
 
             <label>Description :</label>
             <input type="text" class="description" required><br>
-
+            <br>
             <button type="submit">Envoyer</button>
-
+            <br><br>
         </form>
 
     </article>
 
-    <br><br>
+    <br>
 
     <script src="../JS/script.js"></script>
 
-<footer>
-    <a class="social" href="linkedin.com"><img src="../images/linkedin.png"></a>
-    <a class="social" href="facebook.com"><img src="../images/facebook.png"></a>
-    <a class="social" href="x.com"></a><img src="../images/twitter-x.png"></a>
+    <footer>
+        <a class="social" href="linkedin.com"><img src="../images/linkedin.png"></a>
+        <a class="social" href="facebook.com"><img src="../images/facebook.png"></a>
+        <a class="social" href="x.com"></a><img src="../images/twitter-x.png"></a>
 
-    <br>
-    <br>
-</footer>
+        <br>
+        <br>
+    </footer>
 </body>
 
 

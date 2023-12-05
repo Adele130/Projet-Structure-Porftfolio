@@ -13,12 +13,16 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
 .menu {
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     display: flex;
-    justify-content: space-between; /* Ajout de cette ligne pour séparer les éléments à gauche et à droite */
+    justify-content: space-between;
+    /* Ajout de cette ligne pour séparer les éléments à gauche et à droite */
+    padding: 0 10px;
+    /* Ajout de cette ligne pour ajouter un peu d'espace autour des éléments */
 }
 
 .h2 {
     font-size: 16px;
     color: white;
+    margin: 25px;
 }
 
 .Navigation a {
@@ -34,8 +38,8 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
     color: black;
 }
 
-.icon{
-    display:none;
+.icon {
+    display: none;
 }
 
 @media (max-width: 767px) {
@@ -47,7 +51,27 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
         margin-left: auto;
         display: block;
         width: 44px;
+        cursor: pointer;
     }
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
+This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+.menu.responsive {
+    position: relative;
+}
+
+.menu.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
 }
 
 /*Image*/
@@ -67,7 +91,7 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
 }
 
 /*Edito*/
-section {
+.edito {
     background-color: #E0C3FC;
     text-align: center;
 }
@@ -87,7 +111,8 @@ section {
 .carousel-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;/*Adapte la taille de l'image au conteneur*/
+    object-fit: cover;
+    /*Adapte la taille de l'image au conteneur*/
 }
 
 .nextBtn,
@@ -119,31 +144,54 @@ section {
     padding: 20px;
     background-color: rgb(242, 232, 248);
     text-align: center;
-    /*transition: transform 0.3s;*/
 }
-
-/*.box:hover {
-    transform: rotateY(180deg);
-}*/
 
 @media (max-width: 767px) {
     .box {
-        width: 100%;
+        width: 80%;
     }
 }
 
 /*Formulaire*/
 input {
-    padding: 5px;
+    padding: 9px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    margin-left: 30px;
+    width: 60%;
 }
 
 button {
     padding: 10px;
-    background-color: #d1b1fe;
+    background-color: #b5b1fe;
     color: white;
     border-radius: 3px;
+}
+
+.Formulaire {
+    box-shadow: 0 0 10px rgba(16, 34, 232, 0.304);
+    width: 50%;
+    margin: auto;
+}
+
+form {
+    margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+    .Formulaire {
+        width: 90%;
+    }
+
+    input {
+        width: 55%;
+    }
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    /* Ajustez la largeur en fonction de vos besoins */
 }
 
 /*Footer*/
