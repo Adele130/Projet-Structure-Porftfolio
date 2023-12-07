@@ -33,10 +33,10 @@ document.querySelector('.prevBtn').addEventListener('click', previousSlide);
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
-    var x = document.getElementById("MENU");
-    if (x.className === "menu") {
-      x.className += " responsive";
+    var menu = document.querySelector(".menu");
+    if (menu.classList.contains("responsive")) {
+        menu.classList.remove("responsive");
     } else {
-      x.className = "menu";
+        menu.classList.add("responsive");
     }
-  }
+}

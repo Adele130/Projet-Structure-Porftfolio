@@ -13,16 +13,13 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
 .menu {
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     display: flex;
-    justify-content: space-between;
-    /* Ajout de cette ligne pour séparer les éléments à gauche et à droite */
-    padding: 0 10px;
-    /* Ajout de cette ligne pour ajouter un peu d'espace autour des éléments */
+    justify-content: space-between; /* Ajout de cette ligne pour séparer les éléments à gauche et à droite */
 }
 
 .h2 {
     font-size: 16px;
     color: white;
-    margin: 25px;
+    margin:25px;
 }
 
 .Navigation a {
@@ -38,8 +35,8 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
     color: black;
 }
 
-.icon {
-    display: none;
+.icon{
+    display:none;
 }
 
 @media (max-width: 767px) {
@@ -51,27 +48,13 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
         margin-left: auto;
         display: block;
         width: 44px;
-        cursor: pointer;
+        cursor:pointer;
     }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
-This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-.menu.responsive {
-    position: relative;
-}
-
-.menu.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.menu.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-}
-
+    .show-menu {
+        display: flex; /* Ajout pour afficher le menu quand la classe show-menu est présente */
+        flex-direction: column; /* Ajout pour afficher les éléments du menu en colonne */
+    }
 }
 
 /*Image*/
@@ -111,8 +94,7 @@ This class makes the topnav look good on small screens (display the links vertic
 .carousel-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    /*Adapte la taille de l'image au conteneur*/
+    object-fit: cover;/*Adapte la taille de l'image au conteneur*/
 }
 
 .nextBtn,
@@ -153,25 +135,39 @@ This class makes the topnav look good on small screens (display the links vertic
 }
 
 /*Formulaire*/
-input {
+input{
     padding: 9px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    margin-left: 30px;
-    width: 60%;
+    width: 70%;
+    margin-left:170px;
 }
 
-button {
-    padding: 10px;
+.formbutton {
+    padding: 12px;
+    font-size: 15px;
     background-color: #b5b1fe;
     color: white;
     border-radius: 3px;
+    border:none;
+    cursor:pointer;
+    margin-left:1036px;
+}
+
+textarea{
+    padding:9px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 70%;
+    margin-left:170px;
+    height:150px;
 }
 
 .Formulaire {
     box-shadow: 0 0 10px rgba(16, 34, 232, 0.304);
-    width: 50%;
+    width: 95%;
     margin: auto;
+    background-color: rgba(16, 34, 232, 0.041);
 }
 
 form {
@@ -184,15 +180,27 @@ form {
     }
 
     input {
-        width: 55%;
+        width: 53%;
+        margin-left:20px;
+    }
+
+    textarea{
+        width:53%;
+        margin-left:20px;
+    }
+
+    .formbutton{
+        margin-left:245px;
     }
 }
 
 label {
     display: inline-block;
     width: 100px;
-    /* Ajustez la largeur en fonction de vos besoins */
+    vertical-align: top;
+    font-weight: bold;
 }
+
 
 /*Footer*/
 footer {

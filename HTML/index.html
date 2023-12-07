@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <section class="menu" id="MENU">
+        <section class="menu">
             <h2>EDOUARD Adèle</h2>
             <div class="Navigation">
                 <a href="#home">Accueil</a>
@@ -18,10 +18,7 @@
                 <a href="#projet">Contact</a>
                 <a href="#contact">About</a>
             </div>
-            <a href="javascript:void(0);" onclick="myFunction()">
-                <img class="icon" src="../Images/menubars.png" alt="MenuBars">
-            </a>
-            <!--<img class="icon" src="../Images/menubars.png" alt="MenuBars" onclick="toggleMenu()">-->
+            <img class="icon" src="../Images/menubars.png" alt="MenuBars" onclick="toggleMenu()">
         </section>
 
         <figure>
@@ -86,23 +83,21 @@
     <article class="Formulaire">
         <form>
             <br>
-            <label>Nom :</label>
-            <input type="text" class="nom" required><br><br>
+            <label>Nom</label>
+            <input type="text" class="nom" placeholder="Veuillez entrer votre Nom.." required><br><br>
 
-            <label>Prénom :</label>
-            <input type="text" class="prenom" required><br><br>
+            <label>Prénom</label>
+            <input type="text" class="prenom" placeholder="Veuillez entrer votre Prénom..." required><br><br>
 
-            <label>Âge :</label>
-            <input type="number" class="age" required><br><br>
-
-            <label>Description :</label>
-            <input type="text" class="description" required><br>
-            <br>
-            <button type="submit">Envoyer</button>
+            <label>Description</label>
+            <textarea type="text" class="description" placeholder="Veuillez entrer une description..." required></textarea>
+            <br><br>
+            <button class="formbutton" type="submit">Envoyer</button>
             <br><br>
         </form>
 
     </article>
+
 
     <br>
 
