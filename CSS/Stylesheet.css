@@ -16,10 +16,9 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
     justify-content: space-between; /* Ajout de cette ligne pour séparer les éléments à gauche et à droite */
 }
 
-.h2 {
-    font-size: 16px;
-    color: white;
-    margin:25px;
+h1 {
+    font-size:20px;
+    margin:7px;
 }
 
 .Navigation a {
@@ -35,7 +34,7 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
     color: black;
 }
 
-.icon{
+.bar{
     display:none;
 }
 
@@ -51,10 +50,11 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
         cursor:pointer;
     }
 
-    .show-menu {
-        display: flex; /* Ajout pour afficher le menu quand la classe show-menu est présente */
-        flex-direction: column; /* Ajout pour afficher les éléments du menu en colonne */
+    .bar{
+        display:block;
     }
+
+    
 }
 
 /*Image*/
@@ -94,7 +94,7 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
 .carousel-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;/*Adapte la taille de l'image au conteneur*/
+    object-fit: cover;
 }
 
 .nextBtn,

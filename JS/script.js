@@ -31,7 +31,7 @@ document.querySelector('.prevBtn').addEventListener('click', previousSlide);
     //navigation.classList.toggle('show-menu');
 //}
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon
 function myFunction() {
     var menu = document.querySelector(".menu");
     if (menu.classList.contains("responsive")) {
@@ -40,3 +40,13 @@ function myFunction() {
         menu.classList.add("responsive");
     }
 }
+
+document.querySelector('.menu-icon').addEventListener('click', function () {
+    document.querySelector('.menu').classList.toggle('show');
+});*/
+function toggleMenu() {
+    var navigation = document.querySelector('.Navigation');
+    navigation.classList.toggle('show');
+}
+
+

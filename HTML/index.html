@@ -11,14 +11,17 @@
 <body>
     <header>
         <section class="menu">
-            <h2>EDOUARD Adèle</h2>
+            <h1>EDOUARD Adèle</h1>
             <div class="Navigation">
                 <a href="#home">Accueil</a>
                 <a href="#edito">News</a>
                 <a href="#projet">Contact</a>
                 <a href="#contact">About</a>
             </div>
-            <img class="icon" src="../Images/menubars.png" alt="MenuBars" onclick="toggleMenu()">
+            <a href="#" class="bar" onclick="toggleMenu()">
+                <img class="icon" src="../Images/menubars.png" alt="MenuBars">
+            </a>
+            <!--<img class="icon" src="../Images/menubars.png" alt="MenuBars" onclick="toggleMenu()">-->
         </section>
 
         <figure>
@@ -42,6 +45,7 @@
     </div>
 
     <section class="edito">
+        <br>
         <p>Mes Projets en Image</p>
         <br>
     </section>
@@ -70,7 +74,7 @@
         </div>
         <div class="box">
             <h2>Projet 5</h2>
-            <p>Créer un univers virtuel personnalisé pour chaque individu basé sur leurs rêves/désirs</p>       
+            <p>Créer un univers virtuel personnalisé pour chaque individu basé sur leurs rêves/désirs</p>
         </div>
         <div class="box">
             <h2>Projet 6</h2>
@@ -90,7 +94,8 @@
             <input type="text" class="prenom" placeholder="Veuillez entrer votre Prénom..." required><br><br>
 
             <label>Description</label>
-            <textarea type="text" class="description" placeholder="Veuillez entrer une description..." required></textarea>
+            <textarea type="text" class="description" placeholder="Veuillez entrer une description..."
+                required></textarea>
             <br><br>
             <button class="formbutton" type="submit">Envoyer</button>
             <br><br>
@@ -98,22 +103,17 @@
 
     </article>
 
-
     <br>
 
-    <script src="../JS/script.js"></script>
-
     <footer>
-        <a class="social" href="linkedin.com"><img src="../images/linkedin.png"></a>
-        <a class="social" href="facebook.com"><img src="../images/facebook.png"></a>
-        <a class="social" href="x.com"></a><img src="../images/twitter-x.png"></a>
+        <a class="social" href="linkedin.com"><img src="../images/linkedin.png" alt="iconelinkedin"></a>
+        <a class="social" href="facebook.com"><img src="../images/facebook.png" alt="iconefacebook"></a>
+        <a class="social" href="x.com"><img src="../images/twitter-x.png" alt="iconetwitter"></a>
 
         <br>
         <br>
     </footer>
-</body>
-
-
+    <script src="../JS/script.js"></script>
 </body>
 
 </html>
