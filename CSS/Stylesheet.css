@@ -43,17 +43,11 @@ h1 {
 .menuresp {
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     display: flex;
-    flex-direction: column; /* Affiche les éléments en colonne */
-    align-items: flex-start; /* Aligner les éléments à gauche */
+    flex-direction: column;
+    align-items: flex-start;
     display:none;
-
 }
 
-.Navigationresp {
-    text-decoration:none;
-    font-size: 17px;
-    color: white;
-}
 
 
 @media (max-width: 767px) {
@@ -71,6 +65,7 @@ h1 {
     .bar{
         display:block;
     }
+
 }
 
 /*Image*/

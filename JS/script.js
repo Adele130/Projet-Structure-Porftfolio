@@ -25,6 +25,7 @@ showSlide(currentIndex);
 document.querySelector('.nextBtn').addEventListener('click', nextSlide);
 document.querySelector('.prevBtn').addEventListener('click', previousSlide);
 
+//Menu Hamburger
 function toggleMenu() {
     var x = document.getElementById("idmenuresp");
     if (x.style.display === "block") {
