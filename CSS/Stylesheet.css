@@ -54,7 +54,11 @@ h1 {
         display:block;
     }
 
-    
+    #idmenu.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
 
 /*Image*/
