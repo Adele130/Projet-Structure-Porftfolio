@@ -26,10 +26,10 @@ document.querySelector('.nextBtn').addEventListener('click', nextSlide);
 document.querySelector('.prevBtn').addEventListener('click', previousSlide);
 
 function toggleMenu() {
-    var x = document.getElementById("idmenu");
-    if (x.className === "menu") {
-        x.className += " responsive";
+    var x = document.getElementById("idmenuresp");
+    if (x.style.display === "block") {
+        x.style.display = "none";
     } else {
-        x.className = "menu";
+        x.style.display = "block";
     }
 }
