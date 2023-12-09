@@ -11,12 +11,12 @@
 <body>
     <header>
         <section class="menu" id="idmenu">
-            <h1>EDOUARD Adèle</h1>
+            <h1>EDOUARD Adèle</h1>  
             <div class="Navigation">
                 <a href="#accueil">Accueil</a>
-                <a href="#news">News</a>
+                <a href="#edito">Edito</a>
+                <a href="#projet">Projets</a>
                 <a href="#contact">Contact</a>
-                <a href="#about">About</a>
             </div>
             <a href="#" class="bar" onclick="toggleMenu()">
                 <img class="icon" src="../Images/menubars.png" alt="MenuBars">
@@ -25,10 +25,10 @@
 
         <section class="menuresp" id="idmenuresp">
             <div class="Navigationresp">
-                <a href="#accueil2">Accueil</a><br>
-                <a href="#news2">News</a><br>
-                <a href="#contact2">Contact</a><br>
-                <a href="#about2">About</a>
+                <a href="#accueil2">Accueil</a>
+                <a href="#news2">Edito</a>
+                <a href="#contact2">Projets</a>
+                <a href="#about2">Contact</a>
             </div>
         </section>
 
@@ -37,7 +37,7 @@
         </figure>
     </header>
 
-    <div class="CarouselEntier">
+    <div id="edito" class="CarouselEntier">
         <div class="carousel-item">
             <img src="../Images/pic1.jpg" alt="pic1">
         </div>
@@ -52,15 +52,15 @@
         <button class="prevBtn"></button>
     </div>
 
-    <section class="edito">
+    <!--<section class="edito">
         <br>
         <p>Mes Projets en Image</p>
         <br>
-    </section>
+    </section>-->
 
     <br>
 
-    <div class="Boites">
+    <div id="projet" class="Boites">
         <div class="box">
             <h2>Projet 1</h2>
             <p>Mise en place d'un réseau de voyages dans le temps à des fins touristiques</p>
@@ -92,8 +92,10 @@
 
     <br><br>
 
+    <h2  id="contact" class="contact">Contactez-moi</h2>
+
     <article class="Formulaire">
-        <form>
+            <form>
             <br>
             <label>Nom</label>
             <input type="text" class="nom" placeholder="Veuillez entrer votre Nom.." required><br><br>
@@ -118,7 +120,6 @@
         <a class="social" href="facebook.com"><img src="../images/facebook.png" alt="iconefacebook"></a>
         <a class="social" href="x.com"><img src="../images/twitter-x.png" alt="iconetwitter"></a>
 
-        <br>
         <br>
     </footer>
 

@@ -13,12 +13,13 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
 .menu {
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     display: flex;
-    justify-content: space-between; /* Ajout de cette ligne pour séparer les éléments à gauche et à droite */
+    justify-content: space-between;
+    /* Ajout de cette ligne pour séparer les éléments à gauche et à droite */
 }
 
 h1 {
-    font-size:20px;
-    margin:7px;
+    font-size: 20px;
+    margin: 7px;
 }
 
 .Navigation a {
@@ -34,8 +35,8 @@ h1 {
     color: black;
 }
 
-.bar{
-    display:none;
+.bar {
+    display: none;
 }
 
 /*Partie Responsive 2eme menu*/
@@ -44,13 +45,16 @@ h1 {
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     display: flex;
     flex-direction: column;
-    padding-left:8px;
-    display:none;
+    display: none;
 }
 
 .Navigationresp a {
     text-decoration: none;
-    color:white;
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    font-size:17px;
+    padding-left: 10px;
 }
 
 @media (max-width: 767px) {
@@ -62,16 +66,15 @@ h1 {
         margin-left: auto;
         display: block;
         width: 44px;
-        cursor:pointer;
+        cursor: pointer;
     }
 
-    .bar{
-        display:block;
+    .bar {
+        display: block;
     }
 
-    #accueil2{
-        text-decoration:none;
-        color:white;
+    .Navigationresp a:hover{
+        background-color: #ede1f7;
     }
 
 }
@@ -101,7 +104,7 @@ h1 {
 /*Le Caroussel*/
 .CarouselEntier {
     width: 100%;
-    height: 300px;
+    height: 550px;
     position: relative;
 }
 
@@ -140,7 +143,7 @@ h1 {
 }
 
 .box {
-    width: 20%;
+    width: 25%;
     margin: 10px;
     padding: 20px;
     background-color: rgb(242, 232, 248);
@@ -149,17 +152,29 @@ h1 {
 
 @media (max-width: 767px) {
     .box {
-        width: 80%;
+        width: 83%;
+    }
+
+    .CarouselEntier {
+        width: 100%;
+        height: 300px;
+        position: relative;
     }
 }
 
 /*Formulaire*/
-input{
+
+.contact{
+    margin-left:74px;
+    padding:18px;
+}
+
+input {
     padding: 9px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    width: 70%;
-    margin-left:170px;
+    width: 63%;
+    margin-left: 170px;
 }
 
 .formbutton {
@@ -168,33 +183,33 @@ input{
     background-color: #b5b1fe;
     color: white;
     border-radius: 3px;
-    border:none;
-    cursor:pointer;
-    margin-left:1036px;
+    border: none;
+    cursor: pointer;
+    margin-left: 800px;
 }
 
-textarea{
-    padding:9px;
+.formbutton:hover {
+    background-color: #1e1c4d;
+}
+
+textarea {
+    padding: 9px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    width: 70%;
-    margin-left:170px;
-    height:150px;
+    width: 63%;
+    margin-left: 170px;
+    height: 150px;
 }
 
 .Formulaire {
-    box-shadow: 0 0 10px rgba(16, 34, 232, 0.304);
-    width: 95%;
+    box-shadow: 0 0 10px rgba(5, 26, 252, 0.304);
+    width: 75%;
     margin: auto;
-    background-color: rgba(16, 34, 232, 0.041);
+    background-color: rgba(19, 38, 249, 0.041);
 }
 
 form {
     margin-left: 20px;
-}
-
-#accueil2{
-    text-decoration: none;
 }
 
 @media (max-width: 767px) {
@@ -203,17 +218,22 @@ form {
     }
 
     input {
-        width: 63%;
-        margin-left:20px;
+        width: 53%;
+        margin-left: 20px;
     }
 
-    textarea{
-        width:63%;
-        margin-left:20px;
+    textarea {
+        width: 53%;
+        margin-left: 20px;
+        height: 150px;
     }
 
-    .formbutton{
-        margin-left:403px;
+    .formbutton {
+        margin-left: 243px;
+    }
+
+    .contact{
+        margin:auto;
     }
 }
 
