@@ -11,7 +11,7 @@
 <body>
     <header>
         <section class="menu" id="idmenu">
-            <h1>EDOUARD Adèle</h1>  
+            <h1>EDOUARD Adèle</h1>
             <div class="Navigation">
                 <a href="#accueil">Accueil</a>
                 <a href="#edito">Edito</a>
@@ -37,75 +37,73 @@
         </figure>
     </header>
 
-    <div id="edito" class="CarouselEntier">
-        <div class="carousel-item">
-            <img src="../Images/pic1.jpg" alt="pic1">
-        </div>
-        <div class="carousel-item">
-            <img src="../Images/pic2.jpg" alt="pic2">
-        </div>
-        <div class="carousel-item">
-            <img src="../Images/pic3.jpg" alt="pic3">
+    <main>
+
+        <div id="edito" class="CarouselEntier">
+            <div class="carousel-item">
+                <img src="../Images/pic1.jpg" alt="pic1">
+            </div>
+            <div class="carousel-item">
+                <img src="../Images/pic2.jpg" alt="pic2">
+            </div>
+            <div class="carousel-item">
+                <img src="../Images/pic3.jpg" alt="pic3">
+            </div>
         </div>
 
-        <button class="nextBtn">></button>
-        <button class="prevBtn"></button>
-    </div>
+        <br>
 
-    <br>
+        <div id="projet" class="Boites">
+            <div class="box">
+                <h2>Projet 1</h2>
+                <p>Mise en place d'un réseau de voyages dans le temps à des fins touristiques</p>
+            </div>
+            <div class="box">
+                <h2>Projet 2</h2>
+                <p>Développement d'un dispositif de traduction universelle qui traduit les pensées et émotions</p>
+            </div>
+            <div class="box">
+                <h2>Projet 3</h2>
+                <p>Création d'un service de réservation interstellaire</p>
+            </div>
+        </div>
 
-    <div id="projet" class="Boites">
-        <div class="box">
-            <h2>Projet 1</h2>
-            <p>Mise en place d'un réseau de voyages dans le temps à des fins touristiques</p>
+        <div class="Boites">
+            <div class="box">
+                <h2>Projet 4</h2>
+                <p>Réduction de l'Everest à la taille d'une petite colline pour un accès facile</p>
+            </div>
+            <div class="box">
+                <h2>Projet 5</h2>
+                <p>Créer un univers virtuel personnalisé pour chaque individu basé sur leurs rêves/désirs</p>
+            </div>
+            <div class="box">
+                <h2>Projet 6</h2>
+                <p>Connecter tous les animaux du monde à Internet pour faciliter la communication interespèces</p>
+            </div>
         </div>
-        <div class="box">
-            <h2>Projet 2</h2>
-            <p>Développement d'un dispositif de traduction universelle qui traduit les pensées et émotions</p>
-        </div>
-        <div class="box">
-            <h2>Projet 3</h2>
-            <p>Création d'un service de réservation interstellaire</p>
-        </div>
-    </div>
 
-    <div class="Boites">
-        <div class="box">
-            <h2>Projet 4</h2>
-            <p>Réduction de l'Everest à la taille d'une petite colline pour un accès facile</p>
-        </div>
-        <div class="box">
-            <h2>Projet 5</h2>
-            <p>Créer un univers virtuel personnalisé pour chaque individu basé sur leurs rêves/désirs</p>
-        </div>
-        <div class="box">
-            <h2>Projet 6</h2>
-            <p>Connecter tous les animaux du monde à Internet pour faciliter la communication interespèces</p>
-        </div>
-    </div>
+        <br><br>
 
-    <br><br>
+        <h2 id="contact" class="contact">Contactez-moi</h2>
 
-    <h2  id="contact" class="contact">Contactez-moi</h2>
-
-    <article class="Formulaire">
+        <article class="Formulaire">
             <form>
-            <br>
-            <label>Nom</label>
-            <input type="text" class="nom" placeholder="Veuillez entrer votre Nom.." required><br><br>
-
-            <label>Prénom</label>
-            <input type="text" class="prenom" placeholder="Veuillez entrer votre Prénom..." required><br><br>
-
-            <label>Description</label>
-            <textarea class="description" placeholder="Veuillez entrer une description..."
-                required></textarea>
-            <br><br>
-            <button class="formbutton" type="submit">Envoyer</button>
-            <br><br>
-        </form>
-
-    </article>
+                <br>
+                <label for="idnom">Nom</label>
+                <input type="text" id="idnom" class="nom" placeholder="Veuillez entrer votre Nom.." required><br><br>
+            
+                <label for="idprenom">Prénom</label>
+                <input type="text" id="idprenom" class="prenom" placeholder="Veuillez entrer votre Prénom..." required><br><br>
+            
+                <label for="iddescription">Description</label>
+                <textarea id="iddescription" class="description" placeholder="Veuillez entrer une description..." required></textarea>
+                <br><br>
+                <button class="formbutton" type="submit">Envoyer</button>
+                <br><br>
+            </form>
+        </article>
+    </main>
 
     <br>
 

@@ -20,10 +20,7 @@ function previousSlide() {
     showSlide(currentIndex);
 }
 
-// Première Image pour l'ouverture du Site
-showSlide(currentIndex);
-document.querySelector('.nextBtn').addEventListener('click', nextSlide);
-document.querySelector('.prevBtn').addEventListener('click', previousSlide);
+setInterval(nextSlide, 4000);
 
 //Menu Hamburger
 function toggleMenu() {

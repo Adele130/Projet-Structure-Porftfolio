@@ -14,6 +14,7 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     display: flex;
     justify-content: space-between;
+    /* Ajout de cette ligne pour séparer les éléments à gauche et à droite */
 }
 
 h1 {
@@ -116,21 +117,6 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.nextBtn,
-.prevBtn {
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-}
-
-.nextBtn {
-    right: 10px;
-}
-
-.prevBtn {
-    left: 10px;
 }
 
 /*Box Projet*/
