@@ -14,7 +14,7 @@ function nextSlide() {
     showSlide(currentIndex);
 }
 
-setInterval(nextSlide, 4000);
+setInterval(nextSlide, 4001);
 
 //Menu Hamburger
 function toggleMenu() {
