@@ -8,8 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/*Barre de Navigation, tout le groupe en premier
-puis EDOUARD Adèle, puis les liens, et un hover*/
+/*Premier Menu*/
 .menu {
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     display: flex;
@@ -19,7 +18,7 @@ puis EDOUARD Adèle, puis les liens, et un hover*/
 h1 {
     font-size: 20px;
     margin: 7px;
-}     
+}
 
 .Navigation a {
     float: left;
@@ -52,7 +51,7 @@ h1 {
     color: white;
     display: block;
     margin-bottom: 10px;
-    font-size:17px;
+    font-size: 17px;
     padding-left: 10px;
 }
 
@@ -72,7 +71,7 @@ h1 {
         display: block;
     }
 
-    .Navigationresp a:hover{
+    .Navigationresp a:hover {
         background-color: #ede1f7;
     }
 
@@ -92,12 +91,6 @@ h1 {
     .pfp {
         width: 35%;
     }
-}
-
-/*Edito*/
-.edito {
-    background-color: #E0C3FC;
-    text-align: center;
 }
 
 /*Le Caroussel*/
@@ -148,9 +141,9 @@ h1 {
 
 /*Formulaire*/
 
-.contact{
-    margin-left:74px;
-    padding:18px;
+.contact {
+    margin-left: 74px;
+    padding: 18px;
 }
 
 input {
@@ -216,15 +209,16 @@ form {
         margin-left: 243px;
     }
 
-    .contact{
-        margin:auto;
+    .contact {
+        margin: auto;
     }
 }
 
 label {
     display: inline-block;
     width: 100px;
-    vertical-align: top;/*Label on top level of inputbox*/
+    vertical-align: top;
+    /*Label on top level of inputbox*/
     font-weight: bold;
 }
 

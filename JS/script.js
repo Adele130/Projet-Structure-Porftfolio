@@ -1,12 +1,11 @@
-const carouselItems = document.querySelectorAll('.carousel-item');
+const carouselItems = document.querySelectorAll('.carousel-item');//sélectionne ele
 let currentIndex = 0;
 
-function showSlide(index) {
+function showSlide(index) {//appelle img en fcontion de indice, ici 0
     carouselItems.forEach(item => {
-        item.style.display = 'none';
+        item.style.display = 'none';//masque autres img
     });
 
-    // Faire appraitre et bloquer l'image?
     carouselItems[index].style.display = 'block';
 }
 
@@ -15,19 +14,14 @@ function nextSlide() {
     showSlide(currentIndex);
 }
 
-function previousSlide() {
-    currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-    showSlide(currentIndex);
-}
-
 setInterval(nextSlide, 4000);
 
 //Menu Hamburger
 function toggleMenu() {
-    var x = document.getElementById("idmenuresp");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    var x = document.getElementById("idmenuresp");//select element with id menuresp
+    if (x.style.display === "block") {//vérifie si display visible
+        x.style.display = "none";//si oui, il est caché
     } else {
-        x.style.display = "block";
+        x.style.display = "block";//sinon affiche le
     }
 }
